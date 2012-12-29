@@ -1,3 +1,16 @@
+<%
+  images = {
+            0 => "http://dl.dropbox.com/u/14805214/Black%20Current.jpg",
+            1 => "http://dl.dropbox.com/u/14805214/Eggs.jpg",
+            2 => "http://dl.dropbox.com/u/14805214/Pudding.jpg",
+            3 => "http://dl.dropbox.com/u/14805214/Pizza.jpg",
+            4 => "http://dl.dropbox.com/u/14805214/Jelly.jpg",
+            5 => "http://dl.dropbox.com/u/14805214/Nut%20cake.jpg",
+            6 => "http://dl.dropbox.com/u/14805214/Vanilla%20ice%20cream.jpg",
+            7 => "http://dl.dropbox.com/u/14805214/Pan%20cake.jpg"
+  }
+
+%>
 <div id="map" style="height: 200px"></div>
 <div data-role="page" data-theme="a" id="page1">
   <div data-theme="a" data-role="header">
@@ -78,7 +91,7 @@
           </h3>
           <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
             <% @items.each do |item| %>
-              <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Eggs.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+              <li><a href="#"><img src=<%= images[rand(7)] %> height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
             <% end %>
           </ol>
         </div>
@@ -88,7 +101,7 @@
           </h3>
           <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
             <% @items.each do |item| %>
-              <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Pudding.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+              <li><a href="#"><img src=<%= images[rand(7)] %> height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
             <% end %>
           </ol>
         </div>
@@ -99,7 +112,7 @@
           </h3>
           <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
             <% @items.each do |item| %>
-              <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Eggs.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+              <li><a href="#"><img src="<%= images[rand(7)] %>" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
             <% end %>
           </ol>
         </div>
@@ -110,7 +123,7 @@
           </h3>
           <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
             <% @items.each do |item| %>
-              <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Black%20Current.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+              <li><a href="#"><img src=<%= images[rand(7)] %> height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
             <% end %>
           </ol>
         </div>
@@ -120,7 +133,7 @@
           </h3>
           <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
             <% @items.each do |item| %>
-              <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Eggs.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+              <li><a href="#"><img src=<%= images[rand(7)] %> height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
             <% end %>
           </ol>
         </div>
@@ -133,7 +146,7 @@
         </h3>
         <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
           <% @items.each do |item| %>
-            <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Pudding.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+            <li><a href="#"><img src=<%= images[rand(7)] %> height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
           <% end %>
         </ol>
 
@@ -145,7 +158,7 @@
           </h3>
           <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
             <% @items.each do |item| %>
-              <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Pizza.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+              <li><a href="#"><img src=<%= images[rand(7)] %> height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
             <% end %>
           </ol>
         </div>
@@ -156,7 +169,7 @@
           </h3>
           <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
             <% @items.each do |item| %>
-              <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Black%20Current.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+              <li><a href="#"><img src=<%= images[rand(7)] %> height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
             <% end %>
           </ol>
         </div>
@@ -166,7 +179,7 @@
           </h3>
           <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
             <% @items.each do |item| %>
-              <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Eggs.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+              <li><a href="#"><img src=<%= images[rand(7)] %> height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
             <% end %>
           </ol>
         </div>
@@ -177,7 +190,7 @@
         </h3>
         <ol data-role="listview" data-theme="a" data-count-theme="z" data-divider-theme="z" data-filte="false" data-filter-placeholder="vijay" data-inset="false" data-split-icon="arrow-u" data-split-theme="z" data-theme="z">
           <% @items.each do |item| %>
-            <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/Eggs.jpg" height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
+            <li><a href="#"><img src=<%= images[rand(7)] %> height="80" width="80" class="ui-li-thumb"><%= item.name %></a></li>
           <% end %>
         </ol>
       </div>
